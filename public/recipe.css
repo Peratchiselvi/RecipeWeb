@@ -1,0 +1,111 @@
+body{
+  margin: 0;
+}
+#recInRecipes{
+    background-color: #2e3447;
+    background-attachment: fixed;
+    overflow-y: scroll;
+    height: 90vh;
+    width: 80%;
+    margin: 5vh auto;
+    padding: 15px;
+    border-radius: 35px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  #recInRecipes::-webkit-scrollbar{
+    display: none;
+  }
+#mainDetails{
+  display: flex;
+  width: 60%;
+  float: left;
+  padding: 15px 25px;
+  box-sizing: border-box;
+}
+#recipeName{
+  flex: 3;
+}
+#recipeImage{
+  flex: 1;
+  /* position: relative;
+  left: 40px;
+  z-index: 3; */
+}
+
+#ingredients{
+  box-sizing: border-box;
+  padding: 15px 5%;
+  background-color: white;
+  background-attachment: fixed;
+  border-radius: 35px;
+  overflow-y: scroll;
+  height: 85vh;
+  float: right;
+  position: sticky;
+  right: 0px;
+  top: 0px;
+  width: 40%;
+  color: #2e3447;
+}
+#ingredients::-webkit-scrollbar{
+  display: none;
+}
+#methodContainer{
+  box-sizing: border-box;
+  padding: 8px 25px;
+  clear: left;
+  color: white;
+  width: 50%;  
+}
+#method{
+  height: 45%;
+  overflow-y: scroll;
+}
+#method::-webkit-scrollbar{
+  width: 5px;
+}
+#method::-webkit-scrollbar-track{
+  border-radius: 15px;
+  background:  #3b4155;
+}
+ 
+/* Handle */
+#method::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background: #f1bb88; 
+}
+#methodSteps{
+  width: 85%;
+}
+@media only screen and (max-width: 800px) {
+  #ingredients{
+    float: left;
+    height: inherit;
+    position: static;
+    top: initial;
+    right: initial;
+    width: 100%;
+  }
+  #methodContainer{
+    width: 100%;
+    padding-top: 15px;
+  }
+  #method{
+    height: 80%;
+  }
+  #recInRecipes{
+    width: 90%;
+  }
+  #mainDetails{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #mainDetails{
+    flex-direction: column;
+  }
+  #recipeImage{
+    align-self: center;
+  }
+}

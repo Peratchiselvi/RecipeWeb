@@ -1,0 +1,97 @@
+@import "recipe.css";
+#rec{
+    width: 90%;
+    margin: auto;
+    height: 95vh;
+    background-color: green;
+    background-attachment: fixed;
+    overflow: auto;
+}
+#recipeHeader{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10px 15px;
+    overflow: hidden;
+}
+input:focus{
+    outline: none;
+}
+#recipeHeading{
+    flex: 2;
+    width: 100%;
+    flex-grow: 1;
+    color: white;
+    margin: 10px 10px 10px 0px;
+    width: 50%;
+}
+#searchBar{
+    justify-self: flex-end;
+    margin-right: 20px;
+    align-self: center;
+}
+#recipeList{
+    margin: 2rem auto 4rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+
+}
+.recipeCard{
+    background-color: rgb(230, 225, 225);
+    position: relative;
+    box-sizing: border-box;
+    width: 20%;
+    height: 280px;
+    margin: 25px 5px;
+}
+.recipeCard > img{
+    position: absolute;
+    top: 5%;
+    left: 25%;
+}
+.recipeCardDetail{
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+}
+.vegContainer{
+    margin: 0px;
+    height: 70px;
+    width: 70px;
+    background: linear-gradient(to top left,rgb(230, 225, 225) calc(50% - 1px), grey, #f77e0c calc(50% + 1px) );
+}
+.veg{
+    margin: 0px 0px;
+    /* min-width: 80%;
+    max-width: 200%; */
+   -webkit-transform: rotate(-45deg); 
+    -moz-transform: rotate(-45deg);   
+}
+
+@media only screen and (max-width: 1000px) {
+    .recipeCard{
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .recipeCard{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .recipeCard{
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .recipeCard{
+        width: 70%;
+    }
+}
